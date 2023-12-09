@@ -1,0 +1,28 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded sass:docs/assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed sass:docs/assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musabeytekin/FrontendMentor-NewsHomePage.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Musa Beytekin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musabeytekin/FrontendMentor-NewsHomePage/issues"
+  },
+  "homepage": "https://github.com/musabeytekin/FrontendMentor-NewsHomePage#readme",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
