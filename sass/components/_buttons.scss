@@ -1,0 +1,20 @@
+%btn {
+  border: none;
+  padding: 1rem 2rem;
+  max-width: fit-content;
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $soft-red;
+  color: $off-white;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  transition: background-color 0.2s ease-in-out;
+  
+  &:hover {
+    background-color: $very-dark-blue;
+  }
+}

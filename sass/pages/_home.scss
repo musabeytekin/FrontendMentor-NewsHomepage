@@ -1,6 +1,40 @@
 body {
-    padding: {
-        top: 4rem;
-        bottom: 4rem;
+  padding: {
+    top: 4rem;
+    bottom: 4rem;
+  }
+}
+
+section.main-news {
+  display: flex;
+  column-gap: 2rem;
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    &-content {
+      display: flex;
+      column-gap: 13%;
+      h1 {
+        font-size: 3.2rem;
+        font-weight: 800;
+        color: $very-dark-blue;
+      }
+
+      .hero-description {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      p {
+        font-size: $font-size-paragraph;
+        font-weight: 400;
+        color: $dark-grayish-blue;
+      }
     }
+  }
+  ul {
+    padding: 0;
+  }
 }
