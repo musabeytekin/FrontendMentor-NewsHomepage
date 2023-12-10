@@ -6,6 +6,10 @@ nav {
     a {
       font-size: 1rem !important;
       color: $dark-grayish-blue !important;
+
+      &:hover {
+        color: $soft-red !important;
+      }
     }
   }
 }

@@ -1,15 +1,12 @@
-body {
-  padding: {
-    top: 4rem;
-    bottom: 4rem;
-  }
-}
-
 section.main-news {
   display: flex;
   column-gap: 2rem;
 
+  ul {
+    padding: 0;
+  }
   .hero {
+    flex: 70%;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -34,7 +31,96 @@ section.main-news {
       }
     }
   }
-  ul {
-    padding: 0;
+
+  .new {
+    flex: 30%;
+    background-color: $very-dark-blue;
+    padding: 1.5rem 1.2rem 0 1.2rem;
+
+    &-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $soft-orange;
+    }
+
+    ul {
+      li {
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.4rem;
+
+        &:nth-child(even) {
+          border-bottom: 1px solid $dark-grayish-blue;
+          border-top: 1px solid $dark-grayish-blue;
+        }
+
+        h3 {
+          font-size: 1rem;
+          font-weight: 700;
+          color: $off-white;
+          cursor: pointer;
+          &:hover {
+            color: $soft-orange;
+          }
+        }
+
+        p {
+          font-size: $font-size-paragraph;
+          font-weight: 400;
+          color: $grayish-blue;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+section.top-news {
+margin-top: 3rem;
+  ol {
+    display: flex;
+    column-gap: 2rem;
+
+    .top-new {
+      display: flex;
+        column-gap: 1em;
+      .top-new-img {
+        width: 40%;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: .3rem;
+        .top-new-number {
+            color: $grayish-blue;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .top-new-title {
+          font-size: 1rem;
+          font-weight: 800;
+          color: $very-dark-blue;
+          cursor: pointer;
+            transition: color .2s ease-in-out;
+            &:hover {
+                color: $soft-red;
+            }
+
+
+        }
+
+        .top-new-description {
+          font-size: $font-size-paragraph;
+          font-weight: 400;
+          color: $dark-grayish-blue;
+          line-height: 1.5;
+        }
+      }
+
+
+    }
   }
 }

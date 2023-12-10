@@ -7533,6 +7533,7 @@ section {
 ol,
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -7547,6 +7548,8 @@ img {
 body {
   font-size: 1.3rem;
   font-family: "Inter", sans-serif;
+  padding-top: 2rem;
+  max-height: 100vh;
 }
 
 nav ul {
@@ -7555,6 +7558,9 @@ nav ul {
 nav li a {
   font-size: 1rem !important;
   color: hsl(236, 13%, 42%) !important;
+}
+nav li a:hover {
+  color: hsl(5, 85%, 63%) !important;
 }
 
 .btn-primary {
@@ -7576,16 +7582,15 @@ nav li a {
   background-color: hsl(240, 100%, 5%);
 }
 
-body {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 section.main-news {
   display: flex;
   column-gap: 2rem;
 }
+section.main-news ul {
+  padding: 0;
+}
 section.main-news .hero {
+  flex: 70%;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
@@ -7609,8 +7614,81 @@ section.main-news .hero-content p {
   font-weight: 400;
   color: hsl(236, 13%, 42%);
 }
-section.main-news ul {
-  padding: 0;
+section.main-news .new {
+  flex: 30%;
+  background-color: hsl(240, 100%, 5%);
+  padding: 1.5rem 1.2rem 0 1.2rem;
+}
+section.main-news .new-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(35, 77%, 62%);
+}
+section.main-news .new ul li {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+section.main-news .new ul li:nth-child(even) {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+  border-top: 1px solid hsl(236, 13%, 42%);
+}
+section.main-news .new ul li h3, section.main-news .new ul li .h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+}
+section.main-news .new ul li h3:hover, section.main-news .new ul li .h3:hover {
+  color: hsl(35, 77%, 62%);
+}
+section.main-news .new ul li p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(233, 8%, 79%);
+  margin: 0;
+}
+
+section.top-news {
+  margin-top: 3rem;
+}
+section.top-news ol {
+  display: flex;
+  column-gap: 2rem;
+}
+section.top-news ol .top-new {
+  display: flex;
+  column-gap: 1em;
+}
+section.top-news ol .top-new .top-new-img {
+  width: 40%;
+}
+section.top-news ol .top-new-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+section.top-news ol .top-new-content .top-new-number {
+  color: hsl(233, 8%, 79%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+section.top-news ol .top-new-content .top-new-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+section.top-news ol .top-new-content .top-new-title:hover {
+  color: hsl(5, 85%, 63%);
+}
+section.top-news ol .top-new-content .top-new-description {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(236, 13%, 42%);
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=main.css.map */
