@@ -1,3 +1,4 @@
+
 section.main-news {
   display: flex;
   column-gap: 2rem;
@@ -6,6 +7,9 @@ section.main-news {
     padding: 0;
   }
   .hero {
+    &-img-mobile {
+      display: none;
+    }
     flex: 70%;
     display: flex;
     flex-direction: column;
@@ -77,14 +81,14 @@ section.main-news {
 }
 
 section.top-news {
-margin-top: 3rem;
+  margin-top: 3rem;
   ol {
     display: flex;
     column-gap: 2rem;
 
     .top-new {
       display: flex;
-        column-gap: 1em;
+      column-gap: 1em;
       .top-new-img {
         width: 40%;
       }
@@ -92,11 +96,11 @@ margin-top: 3rem;
       &-content {
         display: flex;
         flex-direction: column;
-        row-gap: .3rem;
+        row-gap: 0.3rem;
         .top-new-number {
-            color: $grayish-blue;
-            font-size: 2rem;
-            font-weight: 700;
+          color: $grayish-blue;
+          font-size: 2rem;
+          font-weight: 700;
         }
 
         .top-new-title {
@@ -104,12 +108,10 @@ margin-top: 3rem;
           font-weight: 800;
           color: $very-dark-blue;
           cursor: pointer;
-            transition: color .2s ease-in-out;
-            &:hover {
-                color: $soft-red;
-            }
-
-
+          transition: color 0.2s ease-in-out;
+          &:hover {
+            color: $soft-red;
+          }
         }
 
         .top-new-description {
@@ -119,7 +121,52 @@ margin-top: 3rem;
           line-height: 1.5;
         }
       }
+    }
+  }
+}
 
+@media (max-width: 375px) {
+  .main-news {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .hero {
+    &-img-mobile {
+      display: block !important;
+    }
+
+    &-img-desktop {
+      display: none;
+    }
+
+    &-content {
+      flex-direction: column;
+      column-gap: 0;
+      h1 {
+        font-size: 2rem !important;
+        max-width: 70%;
+      }
+
+      a {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  section.top-news {
+    ol {
+      flex-direction: column;
+      row-gap: 2rem;
+      .top-new {
+        &-img {
+          flex: 30%;
+          width: 100%;
+        }
+        &-content {
+          flex: 70%;
+        }
+        
+      }
 
     }
   }

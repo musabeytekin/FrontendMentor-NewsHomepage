@@ -1,4 +1,5 @@
 nav {
+  background: transparent !important;
   ul {
     column-gap: 1.4rem;
   }
@@ -11,5 +12,32 @@ nav {
         color: $soft-red !important;
       }
     }
+  }
+
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    color: $dark-grayish-blue;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .offcanvas-body {
+    padding-top: 3rem;
+  }
+ 
+  .nav-link {
+    font-size: 1.2rem !important;
+    color: $very-dark-blue !important;
   }
 }
