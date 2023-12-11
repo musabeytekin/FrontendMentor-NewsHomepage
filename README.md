@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](#)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/news-homepage-using-htmlcss-5UeNHLQagu)
 - Live Site URL: [Live](https://musabeytekin.github.io/FrontendMentor-NewsHomepage)
 
 ## My process
